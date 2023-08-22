@@ -5,8 +5,11 @@ class Empregado:
 
     def desconto_vale_transporte(self):
         return salario_base * 0.06
+    
+    def __str__(self):
+        
 
 empregado1 = Empregado("João")
 print(empregado1.nome)
 print(empregado1.salario_base)
-print(f'Desconto vale transporte: {desconto_vale_transporte}')
+print(f'Desconto vale transporte: {self.salario_base}')
